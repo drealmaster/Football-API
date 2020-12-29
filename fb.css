@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #21d190;
+    background-image: linear-gradient(315deg, #21d190 0%, #d65bca 74%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.football{
+    margin: 10px;
+    background-color: white;
+    width: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.football img{
+    max-width: 100%;
+}
+
+.football-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem;
+}
+.football-info h3{
+    margin: 0;
+}
+
+ .popup-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: scroll;
+} 
+
+ .popup-container.hidden{
+    opacity: 0;
+    pointer-events: none;
+} 
+
+
+
+.popup{
+    background-color: seashell;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 0 2rem;
+    position: relative;
+
+}
+.video-info h1{
+    padding: 1rem;
+    margin: 0;
+    margin-top: 10rem;
+    /* margin-bottom: 10rem; */
+text-align: center;
+
+}
+.video-info p{
+text-align: center;
+margin: 0;
+font-size: 1.5rem;
+padding: 0;
+}
+
+.popup .close-popup{
+    position: absolute;
+    top: 12rem;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width:600px){
+
+}
